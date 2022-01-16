@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  .screen {
+    width: 100vw;
+    height: 100vh;
+  }
+  .firstScreen {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2vh 7vw;
+      .logo {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 500;
+      }
+      .headerLinks {
+        .headerLink {
+          font-size: 20px;
+          margin-right: 3vw;
+        }
+        .headerLink:last-child {
+          margin-right: 0;
+        }
+      }
+      .userIcon {
+        .userIcons {
+          cursor: pointer;
+        }
+        .userItems {
+          display: flex;
+          flex-direction: column;
+          transform: scale(0);
+          position: absolute;
+          left: 89vw;
+          z-index: 5;
+          background: #fff;
+          box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+          padding: 1vh 1vw;
+          .userItem {
+            font-size: 17px;
+            font-weight: 400;
+            margin-bottom: 2vh;
+          }
+          .userItem:last-child {
+            margin-bottom: 0;
+          }
+          .userItem:hover {
+            font-weight: 500;
+          }
+          transition: 0.5s;
+        }
+        .active {
+          transform: scale(1);
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      margin-top: 9vh;
+      margin-left: 7vw;
+      .title {
+        margin-right: 19vw;
+        .titleText {
+          font-size: 36px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+        }
+        .slogan {
+          font-size: 24px;
+        }
+      }
+      .slider {
+        width: 52vw;
+        height: 55vh;
+        overflow: hidden;
+        .slides {
+          display: flex;
+          width: 301%;
+          height: 55vh;
+          //border: #000 1px solid;
+          .btnItem {
+            display: none;
+          }
+          .slide {
+            margin: 0;
+            width: 33.3%;
+            transition: 2s;
+            .sliderImg {
+              width: 52vw;
+              height: 55vh;
+              //border: #000 1px solid;
+            }
+          }
+          .controllers {
+            position: absolute;
+            width: 52vw;
+            display: flex;
+            margin-top: 50vh;
+            justify-content: center;
+            .btnLabel {
+              border: 1px solid #fff;
+              border-radius: 10px;
+              padding: 1vh;
+              cursor: pointer;
+              transition: 0.2s;
+            }
+            .btnLabel:not(:last-child) {
+              margin-right: 10px;
+            }
+            .btnLabel:hover {
+              background: #fff;
+            }
+          }
+          #btn1:checked ~ .show {
+            margin-left: 0;
+          }
+          #btn2:checked ~ .show {
+            margin-left: -52vw;
+          }
+          #btn3:checked ~ .show {
+            margin-left: -104vw;
+          }
+        }
+      }
+    }
+  }
+  .secondScreen {
+    .slider {
+      display: flex;
+      .sliderContent {
+        //transform: translateX(100vw);
+        background: url("../img/sliderBg.png") 0 0/100vw 100vh no-repeat;
+        min-width: 100vw;
+        height: 100vh;
+        //border: rgb(255, 0, 0) solid 1px;
+        .content {
+          display: flex;
+          flex-direction: column;
+          //align-items: center;
+          border-bottom: 100vh solid rgb(255, 255, 255);
+          border-right: 60vh solid transparent;
+          height: 0;
+          width: 50vw;
+          .contentTitle {
+            margin-top: 21vh;
+            margin-left: 26vw;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 12vh;
+          }
+          .contentText {
+            margin-left: 3vw;
+            width: 52vw;
+            font-size: 19px;
+          }
+          .slideCounter {
+            display: flex;
+            margin-top: 29vh;
+            margin-left: 3vw;
+            z-index: 10;
+            .num {
+              display: flex;
+              align-items: end;
+              font-family: "Roboto", sans-serif;
+              margin: 0 4vw;
+              .activePage {
+                font-weight: 700;
+                font-size: 25px;
+                margin-right: 9px;
+              }
+              .allPage {
+                font-size: 20px;
+                margin-left: 9px;
+              }
+            }
+          }
+          .arrow {
+            cursor: pointer;
+          }
+          .next {
+            transform: rotateY(180deg);
+          }
+        }
+      }
+      #show {
+        transition-timing-function: ease-in-out;
+        transition: 2s;
+      }
+      .front-end {
+        background: url("../img/frontEnd.png") 0 0/100vw 100vh no-repeat;
+      }
+      .back-end {
+        background: url("../img/backend.jpg") 0 0/100vw 100vh no-repeat;
+      }
+    }
+  }
+  .thirdScreen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .title {
+      font-size: 25px;
+      font-weight: 600;
+      margin-top: 21vh;
+    }
+    .parthnerGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 16vh;
+      margin-left: 10vw;
+      .parthnerContent {
+        display: flex;
+        align-items: center;
+        margin-right: 11vw;
+        margin-bottom: 3vh;
+        .partherText {
+          font-size: 18px;
+          font-weight: 500;
+          margin-right: 6vw;
+        }
+        .partherNum {
+          font-family: "Roboto", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+    background: #000;
+    .mail {
+      font-size: 16px;
+      color: #fff;
+      margin-left: 7vw;
+    }
+    .socialMedia {
+      margin-left: 62vw;
+      .socialItem {
+        margin-right: 1vw;
+        .socialImg {
+        }
+      }
+    }
+  }
+}

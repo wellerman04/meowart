@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7vw;
+    width: 85vw;
+    .logo {
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .headerLinks {
+      .headerLink {
+        font-size: 20px;
+        margin-right: 3vw;
+      }
+      .headerLink:last-child {
+        margin-right: 0;
+      }
+    }
+    .userIcon {
+      .userIcons {
+        cursor: pointer;
+      }
+      .userItems {
+        transform: scale(0);
+        position: absolute;
+        left: 88vw;
+        z-index: 5;
+        background: #fff;
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+        padding: 2vh 2vw;
+        .userItem {
+          font-size: 17px;
+          font-weight: 400;
+          margin-bottom: 2vh;
+        }
+        .userItem:last-child {
+          margin-bottom: 0;
+        }
+        transition: 0.8s;
+      }
+      .active {
+        transform: scale(1);
+      }
+    }
+  }
+  .price {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6vh;
+    .priceItems {
+      .priceItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 29vw;
+        height: 78vh;
+        border-radius: 9px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.07);
+        transition: 0.6s;
+        .priceTitle {
+          font-weight: 600;
+          font-size: 28px;
+        }
+        .priceNum {
+          font-family: Montserrat;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        .order {
+          font-size: 18px;
+          background: transparent;
+          border: 1px solid #000;
+          border-radius: 4px;
+          padding: 2vh 4vw;
+          cursor: pointer;
+          transition: 0.4s;
+        }
+        .order:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+      .priceItem:hover {
+        width: 29vw;
+        height: 78vh;
+        border-radius: 9px;
+        box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

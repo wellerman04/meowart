@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+
+.wrapper a {
+  color: #000;
+  text-decoration: none;
+}
+
+.wrapper .screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper .firstScreen .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2vh 7vw;
+}
+
+.wrapper .firstScreen .header .logo {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.wrapper .firstScreen .header .headerLinks .headerLink {
+  font-size: 20px;
+  margin-right: 3vw;
+}
+
+.wrapper .firstScreen .header .headerLinks .headerLink:last-child {
+  margin-right: 0;
+}
+
+.wrapper .firstScreen .header .userIcon .userIcons {
+  cursor: pointer;
+}
+
+.wrapper .firstScreen .header .userIcon .userItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  left: 89vw;
+  z-index: 5;
+  background: #fff;
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+          box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+  padding: 1vh 1vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper .firstScreen .header .userIcon .userItems .userItem {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 2vh;
+}
+
+.wrapper .firstScreen .header .userIcon .userItems .userItem:last-child {
+  margin-bottom: 0;
+}
+
+.wrapper .firstScreen .header .userIcon .userItems .userItem:hover {
+  font-weight: 500;
+}
+
+.wrapper .firstScreen .header .userIcon .active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.wrapper .firstScreen .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 9vh;
+  margin-left: 7vw;
+}
+
+.wrapper .firstScreen .content .title {
+  margin-right: 17vw;
+}
+
+.wrapper .firstScreen .content .title .titleText {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.wrapper .firstScreen .content .title .slogan {
+  font-size: 24px;
+}
+
+.wrapper .firstScreen .content .slider .sliderImg {
+  width: 52vw;
+}
+
+.wrapper .secondScreen .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .secondScreen .slider .sliderContent {
+  background: url("../img/sliderBg.png") 0 0/100vw 100vh no-repeat;
+  min-width: 100vw;
+  height: 100vh;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 100vh solid white;
+  border-right: 60vh solid transparent;
+  height: 0;
+  width: 50vw;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content .contentTitle {
+  margin-top: 21vh;
+  margin-left: 26vw;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 12vh;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content .contentText {
+  margin-left: 3vw;
+  width: 52vw;
+  font-size: 19px;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content .slideCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 29vh;
+  margin-left: 3vw;
+  z-index: 10;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content .slideCounter .num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  font-family: "Roboto", sans-serif;
+  margin: 0 4vw;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content .slideCounter .num .activePage {
+  font-weight: 700;
+  font-size: 25px;
+  margin-right: 9px;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content .slideCounter .num .allPage {
+  font-size: 20px;
+  margin-left: 9px;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content .arrow {
+  cursor: pointer;
+}
+
+.wrapper .secondScreen .slider .sliderContent .content .next {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.wrapper .secondScreen .slider #show {
+  margin-left: 00vw;
+}
+
+.wrapper .thirdScreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .thirdScreen .title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 21vh;
+}
+
+.wrapper .thirdScreen .parthnerGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 16vh;
+  margin-left: 10vw;
+}
+
+.wrapper .thirdScreen .parthnerGrid .parthnerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 11vw;
+  margin-bottom: 3vh;
+}
+
+.wrapper .thirdScreen .parthnerGrid .parthnerContent .partherText {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 6vw;
+}
+
+.wrapper .thirdScreen .parthnerGrid .parthnerContent .partherNum {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.wrapper .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 7vh;
+  background: #000;
+}
+
+.wrapper .footer .mail {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 7vw;
+}
+
+.wrapper .footer .socialMedia {
+  margin-left: 62vw;
+}
+
+.wrapper .footer .socialMedia .socialItem {
+  margin-right: 1vw;
+}
+/*# sourceMappingURL=style.css.map */

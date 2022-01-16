@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7vw;
+    width: 85vw;
+    .logo {
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .headerLinks {
+      .headerLink {
+        font-size: 20px;
+        margin-right: 3vw;
+      }
+      .headerLink:last-child {
+        margin-right: 0;
+      }
+    }
+    .userIcon {
+      .userIcons {
+        cursor: pointer;
+      }
+      .userItems {
+        transform: scale(0);
+        position: absolute;
+        left: 88vw;
+        z-index: 5;
+        background: #fff;
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+        padding: 2vh 2vw;
+        .userItem {
+          font-size: 17px;
+          font-weight: 400;
+          margin-bottom: 2vh;
+        }
+        .userItem:last-child {
+          margin-bottom: 0;
+        }
+        transition: 0.8s;
+      }
+      .active {
+        transform: scale(1);
+      }
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    gap: 8vh 10vw;
+    margin-top: 14vh;
+    padding: 0 2vw;
+    .portfolioItems {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      width: 25vw;
+      height: 29vh;
+      background: #ffff;
+      box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+      overflow: hidden;
+      .portfolioDescription {
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        .portfolioText {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 3vh;
+        }
+        .portfolioReview {
+          font-size: 16px;
+          width: 13vw;
+        }
+      }
+    }
+    .portfolioImg {
+      width: 25vw;
+      height: 29vh;
+      opacity: 0;
+      transform: translateX(-25vw);
+      transition: 1s;
+    }
+    .portfolioDescription:hover,
+    .portfolioItems:hover {
+      .portfolioImg {
+        position: relative;
+        z-index: 20;
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}

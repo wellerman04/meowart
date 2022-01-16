@@ -1,0 +1,99 @@
+.wrapper {
+  font-family: "Raleway", sans-serif;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 7vw;
+    .logo {
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .headerLinks {
+      .headerLink {
+        font-size: 20px;
+        margin-right: 3vw;
+      }
+      .headerLink:last-child {
+        margin-right: 0;
+      }
+    }
+    .userIcon {
+      .userIcons {
+        cursor: pointer;
+      }
+      .userItems {
+        transform: scale(0);
+        position: absolute;
+        left: 89vw;
+        z-index: 5;
+        background: #fff;
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+        padding: 1vh 1vw;
+        .userItem {
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 2vh;
+        }
+        .userItem:last-child {
+          margin-bottom: 0;
+        }
+        transition: 0.5s;
+      }
+      .active {
+        transform: scale(1);
+      }
+    }
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11vh;
+    .loginTitle {
+      font-size: 27px;
+      font-weight: 600;
+    }
+    .loginInputs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 11vh;
+      .loginInput {
+        width: 27vw;
+        height: 9vh;
+        border: 3px solid #000;
+        border-radius: 5vh;
+        margin-bottom: 2vh;
+        font-size: 23px;
+        padding-left: 3vw;
+      }
+      .loginInput {
+        font-family: "Raleway", sans-serif;
+        color: #000;
+      }
+      .loginInput::placeholder {
+        color: #000;
+      }
+      .buttonSubmit {
+        background: transparent;
+        border: 3px solid #000;
+        font-size: 18px;
+        padding: 2vh 3vw;
+        border-radius: 3px;
+        margin-top: 15vh;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      .buttonSubmit:hover {
+        background: #000;
+        color: #fff;
+      }
+    }
+  }
+}
