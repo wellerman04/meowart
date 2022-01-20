@@ -25,13 +25,13 @@
             <div class="userIcon">
                 <img src="img/userIcon.svg" alt="" class="userIcons" id="userIcons">
                 <div class="userItems" id="userItems">
-                    <p class="userItem">Log in</p>
-                    <p class="userItem">Create</p>
+                    <a href="../login/login.html" class="userItem">Log in</a>
+                    <a href="../login/login.html" class="userItem">Create</a>
                 </div>
             </div>
         </header>
         <div class="order">
-            <div class="price">
+            <div class="price show" id="show">
                 <div class="priceItems">
                     <div class="priceItem">
                         <p class="priceTitle">Design</p>
@@ -65,7 +65,7 @@
                         <textarea class="descriptionArea" name="" id="" ></textarea>
                     </div>
                     <div class="name">
-                        <div class="title">Site name</div>
+                        <div class="title">Select file</div>
                         <input type="file" class="descriptionInpu">
                     </div>
                 </form>
@@ -87,8 +87,22 @@
                 </form>
             </div>
         </div>
+        <div class="sliderItems">
+            <div class="sliderArrow prev">
+                <img src="img/arrow.svg" alt="" class="arrowImg" id="hide">
+            </div>
+            <div class="sliderCounter">
+                <p class="slideActive" id="slideActive">01</p>
+                <p class="counterSlash">/</p>
+                <p class="counterFull">03</p>
+            </div>
+            <div class="sliderArrow">
+                <img src="img/arrow.svg" alt="" class="arrowImg next">
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

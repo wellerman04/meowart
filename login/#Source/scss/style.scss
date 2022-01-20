@@ -28,6 +28,8 @@
         cursor: pointer;
       }
       .userItems {
+        display: flex;
+        flex-direction: column;
         transform: scale(0);
         position: absolute;
         left: 89vw;
@@ -36,12 +38,15 @@
         box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
         padding: 1vh 1vw;
         .userItem {
-          font-size: 15px;
+          font-size: 17px;
           font-weight: 400;
           margin-bottom: 2vh;
         }
         .userItem:last-child {
           margin-bottom: 0;
+        }
+        .userItem:hover {
+          font-weight: 500;
         }
         transition: 0.5s;
       }

@@ -15,7 +15,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 2vh 7vw;
-    width: 85vw;
     .logo {
       text-transform: uppercase;
       font-size: 25px;
@@ -35,13 +34,15 @@
         cursor: pointer;
       }
       .userItems {
+        display: flex;
+        flex-direction: column;
         transform: scale(0);
         position: absolute;
-        left: 88vw;
+        left: 89vw;
         z-index: 5;
         background: #fff;
         box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
-        padding: 2vh 2vw;
+        padding: 1vh 1vw;
         .userItem {
           font-size: 17px;
           font-weight: 400;
@@ -50,7 +51,10 @@
         .userItem:last-child {
           margin-bottom: 0;
         }
-        transition: 0.8s;
+        .userItem:hover {
+          font-weight: 500;
+        }
+        transition: 0.5s;
       }
       .active {
         transform: scale(1);
@@ -111,6 +115,26 @@
     .portfolioItems:hover {
       box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.25);
       transform: translateY(-10px);
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+    background: #000;
+    .mail {
+      font-size: 16px;
+      color: #fff;
+      margin-left: 7vw;
+    }
+    .socialMedia {
+      margin-left: 62vw;
+      .socialItem {
+        margin-right: 1vw;
+        /* .socialImg {
+        } */
+      }
     }
   }
 }
