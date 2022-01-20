@@ -1,0 +1,135 @@
+.wrapper {
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper a {
+  color: #000;
+  text-decoration: none;
+}
+
+.wrapper .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2vh 7vw;
+}
+
+.wrapper .header .logo {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.wrapper .header .headerLinks .headerLink {
+  font-size: 20px;
+  margin-right: 3vw;
+}
+
+.wrapper .header .headerLinks .headerLink:last-child {
+  margin-right: 0;
+}
+
+.wrapper .header .userIcon .userIcons {
+  cursor: pointer;
+}
+
+.wrapper .header .userIcon .userItems {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  left: 89vw;
+  z-index: 5;
+  background: #fff;
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+          box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+  padding: 1vh 1vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper .header .userIcon .userItems .userItem {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 2vh;
+}
+
+.wrapper .header .userIcon .userItems .userItem:last-child {
+  margin-bottom: 0;
+}
+
+.wrapper .header .userIcon .active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.wrapper .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 11vh;
+}
+
+.wrapper .login .loginTitle {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.wrapper .login .loginInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 11vh;
+}
+
+.wrapper .login .loginInputs .loginInput {
+  width: 27vw;
+  height: 9vh;
+  border: 3px solid #000;
+  border-radius: 5vh;
+  margin-bottom: 2vh;
+  font-size: 23px;
+  padding-left: 3vw;
+}
+
+.wrapper .login .loginInputs .loginInput {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+
+.wrapper .login .loginInputs .buttonSubmit {
+  background: transparent;
+  border: 3px solid #000;
+  font-size: 18px;
+  padding: 2vh 3vw;
+  border-radius: 3px;
+  margin-top: 15vh;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .login .loginInputs .buttonSubmit:hover {
+  background: #000;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

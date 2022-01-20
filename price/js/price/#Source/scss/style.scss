@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 7vw;
+    .logo {
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .headerLinks {
+      .headerLink {
+        font-size: 20px;
+        margin-right: 3vw;
+      }
+      .headerLink:last-child {
+        margin-right: 0;
+      }
+    }
+    .userIcon {
+      .userIcons {
+        cursor: pointer;
+      }
+      .userItems {
+        display: flex;
+        flex-direction: column;
+        transform: scale(0);
+        position: absolute;
+        left: 89vw;
+        z-index: 5;
+        background: #fff;
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.251);
+        padding: 1vh 1vw;
+        .userItem {
+          font-size: 17px;
+          font-weight: 400;
+          margin-bottom: 2vh;
+        }
+        .userItem:last-child {
+          margin-bottom: 0;
+        }
+        .userItem:hover {
+          font-weight: 500;
+        }
+        transition: 0.5s;
+      }
+      .active {
+        transform: scale(1);
+      }
+    }
+  }
+  .order {
+    display: flex;
+    margin-top: 3.5vh;
+    #show {
+      transition: 2s;
+    }
+    .price {
+      //border: 1px solid #000;
+      display: flex;
+      justify-content: space-around;
+      min-width: 100vw;
+      .priceItems {
+        .priceItem {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 29vw;
+          height: 78vh;
+          border-radius: 9px;
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.07);
+          transition: 0.6s;
+          .priceTitle {
+            font-weight: 600;
+            font-size: 28px;
+          }
+          .priceNum {
+            font-family: Montserrat;
+            font-size: 28px;
+            font-weight: 500;
+          }
+          .order {
+            font-size: 18px;
+            background: transparent;
+            border: 1px solid #000;
+            border-radius: 4px;
+            padding: 2vh 4vw;
+            cursor: pointer;
+            transition: 0.4s;
+          }
+          .order:hover {
+            background: #000;
+            color: #fff;
+          }
+        }
+        .priceItem:hover {
+          width: 29vw;
+          height: 78vh;
+          border-radius: 9px;
+          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+          transform: translateY(-10px);
+        }
+      }
+    }
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      //border: 1px solid #000;
+      min-width: 100vw;
+      .description-form {
+        text-align: center;
+        .title {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 2vh;
+          margin-left: 1.2vw;
+        }
+        .name {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          margin-bottom: 6vh;
+          .descriptionInput {
+            width: 37vw;
+            height: 7vh;
+            outline: none;
+            border-radius: 7vh;
+            font-size: 18px;
+            padding: 0.5vh 1vw;
+            border: 2px solid #000;
+          }
+        }
+        .area {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          margin-bottom: 6vh;
+          .descriptionArea {
+            resize: none;
+            outline: none;
+            width: 37vw;
+            height: 20vh;
+            border-radius: 1vh;
+            padding: 0.5vh 1vw;
+            border: 2px solid #000;
+            font-family: "Raleway", sans-serif;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .sliderItems {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    margin-top: 2.5vh;
+    margin-left: 43vw;
+    .arrowImg {
+      cursor: pointer;
+    }
+
+    .sliderCounter {
+      display: flex;
+      align-items: end;
+      margin: 0 4vw;
+      .slideActive {
+        font-weight: 500;
+        font-size: 26px;
+      }
+      .counterSlash {
+        margin-left: 1vw;
+        margin-right: 0.5vw;
+      }
+    }
+    .next {
+      transform: rotateY(180deg);
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+    background: #000;
+    .mail {
+      font-size: 16px;
+      color: #fff;
+      margin-left: 7vw;
+    }
+    .socialMedia {
+      margin-left: 62vw;
+      .socialItem {
+        margin-right: 1vw;
+        /* .socialImg {
+        } */
+      }
+    }
+  }
+}
