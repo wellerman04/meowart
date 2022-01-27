@@ -12,7 +12,7 @@
   }
   .screen {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
   }
   .firstScreen {
     .header {
@@ -133,7 +133,7 @@
             margin-left: -52vw;
           }
           #btn3:checked ~ .show {
-            margin-left: -104vw;
+            margin-left: -104.2vw;
           }
         }
       }
@@ -219,25 +219,56 @@
       margin-top: 21vh;
     }
     .parthnerGrid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      margin-top: 16vh;
-      margin-left: 10vw;
-      .parthnerContent {
+      display: flex;
+      flex-direction: column;
+      .teamInput {
+        height: 8vh;
+        width: 27vw;
+        border: 3px solid #000;
+        border-radius: 10vh;
+        outline: none;
+        margin: 5vh 0 2vh 0;
+        font-size: 18px;
+        padding-left: 2vw;
+      }
+      .teamInput::placeholder {
+        font-weight: 400;
+        color: #000;
+        font-family: "Raleway", sans-serif;
+      }
+      .teamArea {
+        resize: none;
+        outline: none;
+        width: 27vw;
+        height: 20vh;
+        border-radius: 1vh;
+        padding: 0.5vh 1vw;
+        border: 3px solid #000;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+      }
+      .teamArea::placeholder {
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-family: "Raleway", sans-serif;
+      }
+      .submit {
         display: flex;
+        justify-content: center;
         align-items: center;
-        margin-right: 11vw;
-        margin-bottom: 3vh;
-        .partherText {
-          font-size: 18px;
-          font-weight: 500;
-          margin-right: 6vw;
-        }
-        .partherNum {
-          font-family: "Roboto", sans-serif;
-          font-size: 18px;
-          font-weight: 500;
-        }
+        width: 10vw;
+        height: 8vh;
+        font-size: 18px;
+        background: transparent;
+        border: 1px solid #000;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.4s;
+        margin-top: 2vh;
+      }
+      .submit:hover {
+        background: #000;
+        color: #fff;
       }
     }
   }

@@ -15,7 +15,7 @@
 
 .wrapper .screen {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .wrapper .firstScreen .header {
@@ -102,7 +102,7 @@
 }
 
 .wrapper .firstScreen .content .title {
-  margin-right: 17vw;
+  margin-right: 19vw;
 }
 
 .wrapper .firstScreen .content .title .titleText {
@@ -116,8 +116,75 @@
   font-size: 24px;
 }
 
-.wrapper .firstScreen .content .slider .sliderImg {
+.wrapper .firstScreen .content .slider {
   width: 52vw;
+  height: 55vh;
+  overflow: hidden;
+}
+
+.wrapper .firstScreen .content .slider .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 301%;
+  height: 55vh;
+}
+
+.wrapper .firstScreen .content .slider .slides .btnItem {
+  display: none;
+}
+
+.wrapper .firstScreen .content .slider .slides .slide {
+  margin: 0;
+  width: 33.3%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.wrapper .firstScreen .content .slider .slides .slide .sliderImg {
+  width: 52vw;
+  height: 55vh;
+}
+
+.wrapper .firstScreen .content .slider .slides .controllers {
+  position: absolute;
+  width: 52vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .firstScreen .content .slider .slides .controllers .btnLabel {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 1vh;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .firstScreen .content .slider .slides .controllers .btnLabel:not(:last-child) {
+  margin-right: 10px;
+}
+
+.wrapper .firstScreen .content .slider .slides .controllers .btnLabel:hover {
+  background: #fff;
+}
+
+.wrapper .firstScreen .content .slider .slides #btn1:checked ~ .show {
+  margin-left: 0;
+}
+
+.wrapper .firstScreen .content .slider .slides #btn2:checked ~ .show {
+  margin-left: -52vw;
+}
+
+.wrapper .firstScreen .content .slider .slides #btn3:checked ~ .show {
+  margin-left: -104vw;
 }
 
 .wrapper .secondScreen .slider {
@@ -201,7 +268,18 @@
 }
 
 .wrapper .secondScreen .slider #show {
-  margin-left: 00vw;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.wrapper .secondScreen .slider .front-end {
+  background: url("../img/frontEnd.png") 0 0/100vw 100vh no-repeat;
+}
+
+.wrapper .secondScreen .slider .back-end {
+  background: url("../img/backend.jpg") 0 0/100vw 100vh no-repeat;
 }
 
 .wrapper .thirdScreen {
@@ -224,35 +302,95 @@
 }
 
 .wrapper .thirdScreen .parthnerGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  margin-top: 16vh;
-  margin-left: 10vw;
-}
-
-.wrapper .thirdScreen .parthnerGrid .parthnerContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamInput {
+  height: 8vh;
+  width: 27vw;
+  border: 3px solid #000;
+  border-radius: 10vh;
+  outline: none;
+  margin: 5vh 0 2vh 0;
+  font-size: 18px;
+  padding-left: 2vw;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamInput::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamInput:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamInput::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamInput::placeholder {
+  font-weight: 400;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamArea {
+  resize: none;
+  outline: none;
+  width: 27vw;
+  height: 20vh;
+  border-radius: 1vh;
+  padding: 0.5vh 1vw;
+  border: 3px solid #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamArea::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamArea:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamArea::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.wrapper .thirdScreen .parthnerGrid .teamArea::placeholder {
+  font-weight: 400;
+}
+
+.wrapper .thirdScreen .parthnerGrid .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 11vw;
-  margin-bottom: 3vh;
+  width: 10vw;
+  height: 8vh;
+  font-size: 18px;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 2vh;
 }
 
-.wrapper .thirdScreen .parthnerGrid .parthnerContent .partherText {
-  font-size: 18px;
-  font-weight: 500;
-  margin-right: 6vw;
-}
-
-.wrapper .thirdScreen .parthnerGrid .parthnerContent .partherNum {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+.wrapper .thirdScreen .parthnerGrid .submit:hover {
+  background: #000;
+  color: #fff;
 }
 
 .wrapper .footer {
@@ -279,5 +417,7 @@
 
 .wrapper .footer .socialMedia .socialItem {
   margin-right: 1vw;
+  /* .socialImg {
+        } */
 }
 /*# sourceMappingURL=style.css.map */
