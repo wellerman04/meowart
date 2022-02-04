@@ -65,6 +65,10 @@
           transform: scale(1);
         }
       }
+      .burgerContent,
+      .burgerScreen {
+        display: none;
+      }
     }
 
     .content {
