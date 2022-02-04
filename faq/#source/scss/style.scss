@@ -1,13 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .wrapper {
   font-family: "Raleway", sans-serif;
   overflow: hidden;
-  //border: 1px solid #000;
-  min-height: 100vh;
   a {
     color: #000;
     text-decoration: none;
@@ -63,66 +56,55 @@
       }
     }
   }
-  .content {
-    display: grid;
-    grid-template-columns: repeat(3, 25vw);
-    gap: 8vh 10vw;
-    margin-top: 14vh;
-    padding: 0 2vw;
-    margin-bottom: 2vh;
-    .portfolioItems {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 25vw;
-      height: 29vh;
-      background: #ffff;
-      box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.25);
-      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.07);
-      border-radius: 6px;
-      overflow: hidden;
-      transition: 0.9s;
-      .portfolioDescription {
-        position: absolute;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        .portfolioText {
-          font-size: 18px;
-          font-weight: 500;
-          margin-bottom: 3vh;
-        }
-        .portfolioReview {
-          font-size: 16px;
-          width: 13vw;
+  .faq {
+    margin-top: 15vh;
+    .faqTabs {
+      margin-left: 39vw;
+      .faqTabRadio {
+        display: none;
+      }
+      .faqTab {
+        font-size: 19px;
+        font-weight: 400;
+        margin-right: 3vw;
+        cursor: pointer;
+      }
+
+      .faqItems {
+        display: none;
+        margin-top: 8vh;
+        //margin-left: 18vw;
+        .faqItem {
+          display: flex;
+          align-items: center;
+          .term {
+            font-size: 20px;
+            margin-right: 1vw;
+            font-weight: 600;
+          }
+          .description {
+            font-size: 18px;
+          }
         }
       }
     }
-    .portfolioImg {
-      width: 25vw;
-      height: 29vh;
-      opacity: 0;
-      transform: translateX(-25vw);
-      transition: 1s;
+    #term:checked ~ #terms {
+      display: block;
     }
-    .portfolioDescription:hover,
-    .portfolioItems:hover {
-      .portfolioImg {
-        position: relative;
-        z-index: 20;
-        opacity: 1;
-        transform: translateX(0);
-      }
+    #itLang:checked ~ #languageItems {
+      display: block;
     }
-    .portfolioItems:hover {
-      box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.25);
-      transform: translateY(-10px);
+    #team:checked ~ #teamItems {
+      display: block;
+    }
+    #date:checked ~ #dateItems {
+      display: block;
     }
   }
   .footer {
-    position: sticky;
-    top: 100vh;
+    position: fixed;
     left: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     width: 100vw;

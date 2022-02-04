@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
     <link rel="stylesheet" href="css/style.css">
-    <title>Price</title>
+    <title>MEOWART</title>
 </head>
 <body>
+    
     <div class="wrapper">
         <header class="header">
             <div class="logo">
@@ -19,8 +21,8 @@
             <nav class="headerLinks">
                 <a href="../index.html" class="headerLink">Main</a>
                 <a href="../portfolio/portfolio.html" class="headerLink">Portfolio</a>
-                <a href="" class="headerLink">Price</a>
-                <a href="" class="headerLink">Support</a>
+                <a href="" class="headerLink">Order</a>
+                <a href="../faq/faq.html" class="headerLink">Support</a>
             </nav>
             <div class="userIcon">
                 <img src="img/userIcon.svg" alt="" class="userIcons" id="userIcons">
@@ -65,8 +67,9 @@
                         <textarea class="descriptionArea" name="" id="" ></textarea>
                     </div>
                     <div class="name">
-                        <div class="title">Select file</div>
-                        <input type="file" class="descriptionInpu">
+                        <!-- <div class="title">Select file</div> -->
+                        <input type="file" class="descriptionInpu" id="file">
+                        <label for="file" class="select">Select file</label>
                     </div>
                 </form>
             </div>
@@ -87,7 +90,10 @@
                     <p class="siteName">Description:</p>
                     <div class="text"></div>
                 </div>
-                <button type="submit" class="submit">Order</button>
+                <div class="submitBlock">
+                    <button type="submit" class="submit">Order</button>
+                    <div class="checkPrice">750$</div>
+                </div>
             </div>
         </div>
         <div class="sliderItems">
