@@ -147,6 +147,7 @@
     .slider {
       display: flex;
       min-width: 100vw;
+      position: relative;
       .sliderContent {
         //transform: translateX(100vw);
         background: url("../img/sliderBg.png") 0 0/100vw 100vh no-repeat;
