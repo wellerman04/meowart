@@ -1,0 +1,116 @@
+@media (max-width: 1024px) {
+  .wrapper {
+    .firstScreen {
+      .header {
+        display: flex;
+        align-items: center;
+        .headerLinks,
+        .userIcon {
+          display: none;
+        }
+        .burgerContent {
+          cursor: pointer;
+          //border: 1px solid #000;
+          box-sizing: border-box;
+          width: 3vw;
+          height: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .burger {
+            position: relative;
+            z-index: 50;
+            width: 2vw;
+            height: 0.3vh;
+            background: #000;
+            transform: rotateY(-180deg);
+            //transition: 1.3s;
+          }
+          .burger::before {
+            position: absolute;
+            top: 5px;
+            content: "";
+            width: 1vw;
+            height: 0.3vh;
+            background: #000;
+            transition: 0.8s;
+          }
+          .burger::after {
+            position: absolute;
+            top: -5px;
+            content: "";
+            width: 3vw;
+            height: 0.3vh;
+            background: #000;
+            transition: 0.8s;
+          }
+          .close {
+            position: relative;
+            background: #fff;
+            z-index: 50;
+          }
+          .close::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            transform: rotateZ(135deg);
+            width: 2vw;
+          }
+          .close::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            transform: rotateZ(-135deg);
+            width: 2vw;
+          }
+        }
+        .burgerScreen {
+          display: none;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 40;
+          width: 100vw;
+          height: 100vh;
+          background: #fff;
+          .headerLinks {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            .headerLink {
+              margin: 0;
+              font-size: 20px;
+              margin-top: 2vh;
+            }
+          }
+          .login {
+            display: flex;
+            flex-direction: column;
+            //border: 1px solid #000;
+            font-size: 18px;
+            margin-top: 6vw;
+            .loginText {
+              margin-bottom: 0.5vh;
+            }
+          }
+        }
+        .show {
+          display: flex;
+        }
+      }
+      .content {
+        .title {
+          margin-right: 8vw;
+        }
+      }
+    }
+  }
+  .block {
+    overflow: hidden;
+  }
+}
