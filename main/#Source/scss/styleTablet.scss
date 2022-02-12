@@ -1,5 +1,6 @@
 @media (max-width: 1024px) {
   .wrapper {
+    overflow: hidden;
     .firstScreen {
       .header {
         display: flex;
@@ -45,7 +46,7 @@
             transition: 0.8s;
           }
           .close {
-            position: relative;
+            position: fixed;
             background: #fff;
             z-index: 50;
           }
@@ -137,10 +138,10 @@
     .thirdScreen {
       .parthnerGrid {
         .teamInput {
-          width: 34vw;
+          width: 37vw;
         }
         .teamArea {
-          width: 34vw;
+          width: 37vw;
         }
       }
     }
