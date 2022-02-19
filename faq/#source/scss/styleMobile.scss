@@ -70,5 +70,29 @@
         margin-left: 0;
       }
     }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      //justify-content: space-between;
+      overflow: scroll;
+      max-width: 100vw;
+      height: 7vh;
+      background: #000;
+      .mail {
+        font-size: 16px;
+        color: #fff;
+        margin-left: 5vw;
+      }
+      .socialMedia {
+        margin-left: 35vw;
+        //border: #fff 1px solid;
+        .socialItem {
+          margin-right: 1vw;
+        }
+      }
+    }
   }
 }
