@@ -98,11 +98,14 @@
     #term:checked ~ #terms {
       display: block;
     }
-    #itLang:checked ~ #languageItems {
+    #term:checked ~ #languageItems {
       display: block;
     }
     #team:checked ~ #teamItems {
       display: block;
+    }
+    #team:checked ~ .faqTab {
+      font-weight: 600;
     }
     #date:checked ~ #dateItems {
       display: block;

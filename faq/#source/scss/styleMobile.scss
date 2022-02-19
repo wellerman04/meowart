@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 481px) {
   .wrapper {
     .header {
       display: flex;
@@ -11,7 +11,7 @@
         cursor: pointer;
         //border: 1px solid #000;
         box-sizing: border-box;
-        width: 3vw;
+        width: 7vw;
         height: 16px;
         display: flex;
         align-items: center;
@@ -19,7 +19,7 @@
         .burger {
           position: relative;
           z-index: 50;
-          width: 3vw;
+          width: 4vw;
           height: 0.3vh;
           background: #000;
           transform: rotateY(-180deg);
@@ -29,7 +29,7 @@
           position: absolute;
           top: 5px;
           content: "";
-          width: 2vw;
+          width: 3vw;
           height: 0.3vh;
           background: #000;
           transition: 0.8s;
@@ -38,7 +38,7 @@
           position: absolute;
           top: -5px;
           content: "";
-          width: 4vw;
+          width: 5vw;
           height: 0.3vh;
           background: #000;
           transition: 0.8s;
@@ -54,14 +54,14 @@
           position: absolute;
           top: 0px;
           transform: rotateZ(135deg);
-          width: 2vw;
+          width: 4vw;
         }
         .close::after {
           content: "";
           position: absolute;
           top: 0px;
           transform: rotateZ(-135deg);
-          width: 2vw;
+          width: 4vw;
         }
       }
     }
